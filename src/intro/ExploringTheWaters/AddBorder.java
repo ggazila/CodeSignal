@@ -1,5 +1,9 @@
 package intro.ExploringTheWaters;
+/*
+Given a rectangular matrix of characters, add a border of asterisks(*) to it.
 
+
+*/
 
 public class AddBorder {
     public static void main(String[] args) {
