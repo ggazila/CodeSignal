@@ -4,12 +4,18 @@ public class reverseInParentheses {
     public static void main(String[] args) {
         String s = "foo(bar)baz";
         reverseInParentheses(s);
-       // System.out.println(s);
+        System.out.println(reverseInParentheses(s));
     }
     static String reverseInParentheses(String inputString) {
-        String newInput = inputString.replace("(", "").replace(")","");
-        String result = new StringBuffer(newInput).reverse().toString();
-        System.out.println(result);
-        return result;
+        StringBuilder str = new StringBuilder(inputString);
+        int start, end;
+        while(str.indexOf("(") != -1){
+            start = str.lastIndexOf("(");
+            end = str.indexOf(")", start);
+            str.replace(start, end + 1, new StringBuilder(str.substring(start+1, end)).reverse().toString());
+        }
+        return str.toString();
+        //
+
     }
 }
