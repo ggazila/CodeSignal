@@ -1,27 +1,36 @@
 package intro.ExploringTheWaters;
+/*
+Two arrays are called similar if one can be obtained from another by swapping at most one pair of elements in one of the arrays.
 
+Given two arrays a and b, check whether they are similar.
+
+Example
+
+For a = [1, 2, 3]
+and b = [1, 2, 3], the output should be
+areSimilar(a, b) = true.
+
+The arrays are equal, no need to swap any elements.
+
+For a = [1, 2, 3]
+and b = [2, 1, 3], the output should be
+areSimilar(a, b) = true.
+
+We can obtain b from a by swapping 2 and 1 in b.
+
+For a = [1, 2, 2]
+and b = [2, 1, 1], the output should be
+areSimilar(a, b) = false.
+
+Any swap of any two elements either in a or in b won't make a and b equal.
+ */
 public class AreSimilar {
     public static void main(String[] args) {
-        int[] a = {4,6,3};
-        int[] b = {3,4,6};
-        result(a,b);
+        int[] a = {5,6,7};
+        int[] b = {1,2,3};
+        System.out.println(result(a,b));
     }
     static boolean result (int[] A, int[] B) {
-        int cnt=0, a1=0, a2=0, b1=0, b2=0;
-
-        for(int i=0; i<A.length; i++)
-            if(A[i]!=B[i]) {
-                cnt++;
-                if(cnt==1) {
-                    a1 = A[i];
-                    b1 = B[i];
-                }
-                else if(cnt==2) {
-                    a2 = A[i];
-                    b2 = B[i];
-                }
-            }
-
-        return cnt==0 || cnt==2 && a1==b2 && a2==b1;
+        return true;
     }
 }

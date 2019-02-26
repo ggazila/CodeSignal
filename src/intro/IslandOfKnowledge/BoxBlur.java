@@ -1,7 +1,5 @@
 package intro.IslandOfKnowledge;
 
-import com.sun.javafx.geom.Path2D;
-
 import java.util.ArrayList;
 
 public class BoxBlur {
