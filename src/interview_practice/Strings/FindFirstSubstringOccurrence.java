@@ -1,4 +1,4 @@
-package InterviewPractice.Strings;
+package interview_practice.Strings;
 
 public class FindFirstSubstringOccurrence {
     public static void main(String[] args) {

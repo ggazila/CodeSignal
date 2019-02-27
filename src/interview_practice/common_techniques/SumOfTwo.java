@@ -1,7 +1,6 @@
-package InterviewPractice.CommonTechniques;
+package interview_practice.common_techniques;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 /*
 You have two integer arrays, a and b, and an integer target value v.

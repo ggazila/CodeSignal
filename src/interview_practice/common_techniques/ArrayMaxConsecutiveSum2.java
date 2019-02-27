@@ -1,4 +1,4 @@
-package InterviewPractice.CommonTechniques;
+package interview_practice.common_techniques;
 /*
 Given an array of integers, find the maximum possible sum you can get from one of its contiguous subarrays.
 The subarray from which this sum comes must contain at least 1 element.

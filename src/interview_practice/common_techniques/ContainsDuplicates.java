@@ -1,6 +1,5 @@
-package InterviewPractice.CommonTechniques;
+package interview_practice.common_techniques;
 
-import java.util.TreeMap;
 import java.util.TreeSet;
 
 /*
