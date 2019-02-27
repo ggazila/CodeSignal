@@ -1,6 +1,4 @@
-package Strings;
-
-import java.util.HashMap;
+package InterviewPractice.Strings;
 
 public class FindFirstSubstringOccurrence {
     public static void main(String[] args) {

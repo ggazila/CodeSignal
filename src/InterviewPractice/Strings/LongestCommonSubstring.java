@@ -1,4 +1,4 @@
-package Strings;
+package InterviewPractice.Strings;
 
 public class LongestCommonSubstring {
     public static void main(String[] args) {
