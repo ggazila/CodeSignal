@@ -8,7 +8,7 @@ public class WriteAndSplit {
         Scanner scan = new Scanner(System.in);
         System.out.println("Write a link");
         FileReader fr = new FileReader(scan.nextLine());
-        FileWriter fw = new FileWriter("C:\\Users\\PC\\Downloads\\Scrubs_s01x0002.xls");
+        FileWriter fw = new FileWriter("C:\\Users\\PC\\Desktop\\2.txt");
         Scanner sc = new Scanner(fr);
         String c = "";
         c = getString(sc, c);
@@ -29,7 +29,7 @@ public class WriteAndSplit {
 
     @NotNull
     private static String[] getStrings(String c) {
-        return c.toLowerCase().replaceFirst("[0-9_'-]","").replaceAll("[-'_,.!?0-9]","").split(" | \n");
+        return c.toLowerCase().replaceFirst("[']","").replaceAll("[#$@&^-_,.!?0-9]","").split(" | \n");
     }
 
     private static SortedSet<String> getSortedSet(String[] d) {

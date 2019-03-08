@@ -1,4 +1,4 @@
-package interview_practice.Strings;
+package interview_practice.strings;
 
 public class FindFirstSubstringOccurrence {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class FindFirstSubstringOccurrence {
         System.out.println(findFirstSubstringOccurrence(s, x));
     }
 
-    static int findFirstSubstringOccurrence(String s, String x) {
+    private static int findFirstSubstringOccurrence(String s, String x) {
         int[] lastIndexOfXTable = new int[256];
         for ( int i = 0; i < 256; i++ ) {
             lastIndexOfXTable[i] = -1;

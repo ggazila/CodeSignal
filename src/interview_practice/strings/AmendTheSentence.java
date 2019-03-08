@@ -1,11 +1,11 @@
-package interview_practice.Strings;
+package interview_practice.strings;
 
 public class AmendTheSentence {
     public static void main(String[] args) {
         String s = "CodesignalIsAwesome";
         result(s);
     }
-    static String result(String s) {
+   private static String result(String s) {
         String[] r = s.split("(?=\\p{Upper})");
         for (int i = 0; i < r.length; i++) {
             r[i] = r[i].toLowerCase();
