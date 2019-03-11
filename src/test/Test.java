@@ -1,5 +1,6 @@
 package test;
 
+import java.io.File;
 import java.util.*;
 
 public class Test {
@@ -12,9 +13,6 @@ public class Test {
     }
 
     public static void main(String[] args) {
-
-        Test smudge = new Test("Smudge", 5);
-        System.out.println(smudge.name);
-        System.out.println(smudge.age);
+        File f = new File("12345.txt");
     }
 }

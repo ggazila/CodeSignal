@@ -7,20 +7,22 @@ public class WriteAndSplit {
     public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
         System.out.println("Write a link");
-        FileReader fr = new FileReader(scan.nextLine());
-        FileWriter fw = new FileWriter("C:\\Users\\PC\\Desktop\\2.txt");
+  //      FileReader fr = new FileReader(scan.nextLine());
+        BufferedReader fr = new BufferedReader(new FileReader(scan.nextLine()));
+        BufferedWriter fw = new BufferedWriter(new FileWriter("C:\\Users\\PC\\Desktop\\2.txt"));
+//        FileWriter fw = new FileWriter("C:\\Users\\PC\\Desktop\\2.txt");
         Scanner sc = new Scanner(fr);
         String c = "";
         c = getString(sc, c);
         String[] d = getStrings(c);
         SortedSet<String> myList = getSortedSet(d);
-        System.out.println(myList.toString());
+//        System.out.println(myList.toString());
         writeToFile(fw, myList);
         fw.close();
         fr.close();
     }
 
-    private static void writeToFile(FileWriter fw, SortedSet<String> myList) throws IOException {
+    private static void writeToFile(BufferedWriter fw, SortedSet<String> myList) throws IOException {
 
         for (Object o : myList) {
             fw.write( o + "\n");
@@ -29,7 +31,7 @@ public class WriteAndSplit {
 
     @NotNull
     private static String[] getStrings(String c) {
-        return c.toLowerCase().replaceFirst("[']","").replaceAll("[#$@&^-_,.!?0-9]","").split(" | \n");
+        return c.toLowerCase().replaceFirst("[\"]","кз").replaceAll("[#$@&^_,.!?0-9]","").split(" | \n");
     }
 
     private static SortedSet<String> getSortedSet(String[] d) {
